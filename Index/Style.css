@@ -1,0 +1,1071 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
+.second-font {
+    font-size: 12px;
+}
+
+.second-color {
+    color: #333;
+}
+
+.first-color {
+    color: #666;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* hotline */
+
+.hotline {
+    position: relative;
+}
+
+.hotline0::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(90deg, rgba(49, 85, 117, 1) 20%, rgba(29, 142, 211, 1) 50%, rgba(255, 207, 0, 1) 100%);
+    width: 100%;
+    height: 4px;
+}
+
+.hotline0::after {
+    position: absolute;
+    content: "";
+    background-color: #f2f2f2;
+    height: 1px;
+    width: 100%;
+}
+
+.huongdan {
+    text-align: right;
+}
+
+/* header */
+
+.logo-header a img {
+    width: 9.2rem;
+    height: 70x;
+}
+
+.search-header {
+    margin-top: 8px !important;
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 0 60px 0 20px;
+    background: #ededed;
+    border-radius: 999px;
+    border: 1px solid #ededed;
+}
+
+.search i {
+    right: 2%;
+    font-size: 30px;
+    top: 15%;
+}
+
+.login-header i {
+    border: 2px solid #dddddd;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.login-header ul li {
+    flex-grow: 1;
+}
+
+/* navbar */
+
+.navbar-header {
+    background-color: black;
+    height: 35px;
+    font-size: 16px;
+}
+
+.navbar-header>ul>li>a {
+    color: white;
+    padding: 0 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.navbar-header>ul>li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.active-red {
+    color: #f00 !important;
+}
+
+.nam {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.nu {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.kid {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.thuonghieu {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.phukien {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.nam li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.nu li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.kid li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.thuonghieu li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.phukien li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.male-navbar:hover ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.female-navbar:hover .nu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.kid-navbar:hover .kid {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.brad-navbar:hover .thuonghieu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.item-navbar:hover .phukien {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.ultraboost::before {
+    content: url(./Images/hot.png);
+    width: 10px;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+}
+
+/* banner */
+
+.banner>div {
+    padding: 0;
+}
+
+/* collection */
+
+.collection {
+    width: 92%;
+    margin: auto;
+}
+
+.list-collection {
+    padding: 30px 15px 10px;
+    text-align: center;
+}
+
+.list-collection img {
+    width: 68.3%;
+}
+
+.list-collection img:hover {
+    opacity: 0.5;
+}
+
+.list-collection p {
+    color: #777;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* san pham ban chay */
+
+.sp {
+    width: 90%;
+    margin: auto;
+}
+
+.sp h2 {
+    text-align: center;
+    position: relative;
+}
+
+.sp h2 a {
+    font-size: 34px;
+    line-height: 1.6;
+}
+
+.sp h2::before {
+    content: "";
+    border-bottom: 1px solid black;
+    width: 55px;
+    height: 1px;
+    position: absolute;
+    bottom: -25%;
+    left: 48%;
+}
+
+.sanpham1 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham1::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.muangay {
+    top: 63%;
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    font-weight: 700;
+    font-size: 12px;
+    width: 239.5px;
+    text-align: center;
+    align-items: center;
+    height: 31.6px;
+}
+
+.muangay span {
+    height: 102%;
+    font-size: 12px;
+    width: 50%;
+    background-color: black;
+    color: white;
+}
+
+.muangay div {
+    font-size: 12px;
+    height: 102%;
+    width: 50%;
+}
+
+.sanpham1:hover .muangay {
+    display: flex;
+}
+
+.sanpham1 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img1 {
+    background-image: url(./Images/giay11.png);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.star-yellow i {
+    color: #f7d805!important;
+}
+
+.giaban>span>b {
+    margin-right: 10px;
+}
+
+.giaban {
+    margin-bottom: 10px;
+}
+
+.sanpham1:hover .bgr-img1 {
+    background-image: url(./Images/giay12.png);
+}
+
+.sanpham2 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham2::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham2:hover .muangay {
+    display: flex;
+}
+
+.sanpham2 h3 a {
+    font-size: 16px;
+}
+
+.sanpham2:hover .bgr-img2 {
+    background-image: url(./Images/giay22.png);
+}
+
+.bgr-img2 {
+    background-image: url(./Images/giay21.png);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham3 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham3::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham3:hover .muangay {
+    display: flex;
+}
+
+.sanpham3 h3 a {
+    font-size: 16px;
+}
+
+.sanpham3:hover .bgr-img3 {
+    background-image: url(./Images/tui32.png);
+}
+
+.bgr-img3 {
+    background-image: url(./Images/tui31.png);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham4 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham4::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham4:hover .muangay {
+    display: flex;
+}
+
+.sanpham4 h4 a {
+    font-size: 16px;
+}
+
+.sanpham4:hover .bgr-img4 {
+    background-image: url(./Images/ao42.png);
+}
+
+.bgr-img4 {
+    background-image: url(./Images/ao41.png);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham4 h3 a {
+    font-size: 16px;
+}
+
+.sanpham1 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham2 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham3 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham4 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham1:hover {
+    border: 1.1px solid #1d8ed3;
+}
+
+.sanpham2:hover {
+    border: 1.1px solid #1d8ed3;
+}
+
+.sanpham3:hover {
+    border: 1.1px solid #1d8ed3;
+}
+
+.sanpham4:hover {
+    border: 1.1px solid #1d8ed3;
+}
+
+/* xu huong */
+
+.bgr-xh {
+    background-image: url(./Images/xuhuong1.png);
+    max-width: 100%;
+    height: 24.59rem;
+    background-size: 100%;
+}
+
+.bgr-xh1 {
+    background-image: url(./Images/xuhuong2.png);
+    max-width: 100%;
+    background-size: cover;
+    height: 20rem;
+}
+
+.bgr-xh2 {
+    background-image: url(./Images/xuhuong3.png);
+    max-width: 100%;
+    background-size: cover;
+    height: 20rem;
+}
+
+.bgr-xh3 {
+    background-image: url(./Images/xuhuong4.png);
+    max-width: 100%;
+    background-size: cover;
+    height: 20rem;
+}
+
+.btn-xh {
+    background: #fff;
+    opacity: 0.7;
+    border: 2px solid black;
+    padding: 8px;
+    width: 120px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+
+.btn-xh:hover {
+    background: #ffcf00;
+}
+
+/* san pham noi bat */
+
+.carousel-sp {
+    top: -45px;
+    z-index: 100000;
+    height: 39.2px;
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    border-bottom: 2px solid #1d8ed3;
+    background-color: #eeeeee;
+}
+
+.carousel-sp .active {
+    color: #fff !important;
+    background-color: #1d8ed3 !important;
+}
+
+.carousel-sp li {
+    text-indent: 0;
+    margin: auto;
+    width: 190px;
+    height: 29px;
+    border: none;
+    text-align: center;
+    padding-top: 9px;
+    font-weight: bold;
+}
+
+.sanpham121 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham121 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham121::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham121:hover .muangay {
+    display: flex;
+}
+
+.sanpham121 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img121 {
+    background-image: url(./Images/spnb121.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham131 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham131 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham131::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham131:hover .muangay {
+    display: flex;
+}
+
+.sanpham131 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img131 {
+    background-image: url(./Images/spnb131.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham141 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham141 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham141::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham141:hover .muangay {
+    display: flex;
+}
+
+.sanpham141 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img141 {
+    background-image: url(./Images/spnb141.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham151 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham151 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham151::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham151:hover .muangay {
+    display: flex;
+}
+
+.sanpham151 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img151 {
+    background-image: url(./Images/spnb151.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham161 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham161 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham161::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham161:hover .muangay {
+    display: flex;
+}
+
+.sanpham161 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img161 {
+    background-image: url(./Images/spnb161.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham171 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham171 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham171::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham171:hover .muangay {
+    display: flex;
+}
+
+.sanpham171 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img171 {
+    background-image: url(./Images/spnb171.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham181 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham181 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham181::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham181:hover .muangay {
+    display: flex;
+}
+
+.sanpham181 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img181 {
+    background-image: url(./Images/spnb181.jpg);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham211 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham211 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham211::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham211:hover .muangay {
+    display: flex;
+}
+
+.sanpham211 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img211 {
+    background-image: url(./Images/spnb211.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham211:hover .bgr-img211 {
+    background-image: url(./Images/spnb212.webp);
+}
+
+.sanpham221 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham221 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham221::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham221:hover .muangay {
+    display: flex;
+}
+
+.sanpham221 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img221 {
+    background-image: url(./Images/spnb221.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham221:hover .bgr-img221 {
+    background-image: url(./Images/spnb222.webp);
+}
+
+.sanpham231 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham231 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham231::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham231:hover .muangay {
+    display: flex;
+}
+
+.sanpham231 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img231 {
+    background-image: url(./Images/spnb231.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham231:hover .bgr-img231 {
+    background-image: url(./Images/spnb232.webp);
+}
+
+.sanpham241 h3 {
+    white-space: nowrap;
+    width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sanpham241 {
+    padding: 10px;
+    border: 1.5px solid #eee;
+    position: relative;
+}
+
+.sanpham241::before {
+    content: "";
+    background-image: url(./Images/sale.png);
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    right: 14px;
+}
+
+.sanpham241:hover .muangay {
+    display: flex;
+}
+
+.sanpham241 h3 a {
+    font-size: 16px;
+}
+
+.bgr-img241 {
+    background-image: url(./Images/spnb241.webp);
+    width: 239.5px;
+    height: 239.5px;
+    background-size: 100%;
+}
+
+.sanpham241:hover .bgr-img241 {
+    background-image: url(./Images/spnb242.webp);
+}
+
+.btn-more {
+    bottom: 0;
+    right: 5%;
+    width: 132px;
+}
+/* thuong hieu */
+.img-th img{
+    max-width: 100%;
+}
+.bgr-th-1{
+    background-image: url(./Images/bgrthuonghieu1.webp);
+    width: 100%;
+    height: 32rem;
+    background-size: 100%;
+}
+.bgr-th-2{
+    background-image: url(./Images/bgrthuonghieu2.jpg);
+    width: 100%;
+    height: 32rem;
+    background-size: 100%;
+}
