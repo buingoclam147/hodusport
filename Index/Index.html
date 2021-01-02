@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./stylesheet/Style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
@@ -20,11 +20,42 @@
 </head>
 
 <body>
+    <div class="brg-tablets"></div>
+    <ul class="position-fixed menu-tablets">
+        <p class="d-flex">MENU <i class='bx bx-x'></i></p>
+        <li class="d-flex">
+            <a href="#">NAM</a><i class='bx bxs-chevron-down'></i>
+        </li>
+        <li class="d-flex">
+            <a href="#">NỮ</a><i class='bx bxs-chevron-down'></i>
+        </li>
+        <li class="d-flex">
+            <a href="#">KID</a><i class='bx bxs-chevron-down'></i>
+        </li>
+        <li class="d-flex">
+            <a href="#">THƯƠNG HIỆU</a><i class='bx bxs-chevron-down'></i>
+        </li>
+        <li class="d-flex">
+            <a href="#">PHỤ KIỆN</a><i class='bx bxs-chevron-down'></i>
+        </li>
+        <li><a href="#">
+                SALE
+            </a>
+        </li>
+        <li><a href="#">
+                BLOG
+            </a>
+        </li>
+        <li><a href="#">
+                ULTRABOOST
+            </a>
+        </li>
+    </ul>
     <!-- hotline -->
     <div class="hotline0">
         <div class="hotline container py-2">
             <div class="row">
-                <div class="col-xs-12 col-sm-8">
+                <div class="col-sm-8">
                     <span>
                         <i class='bx bxs-phone-call'></i> Hotline: 1900 066 827
                     </span> <span>
@@ -40,12 +71,12 @@
     <!-- logo search login -->
     <div class="container">
         <div class="row header mt-2">
-            <div class="col-md-2 col-sm-4 col-xs-6 logo-header">
+            <div class="col-md-2 col-sm-4 logo-header">
                 <a href="#">
                     <img src="./Images/logo.png" alt="logo">
                 </a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 tablet-search">
                 <div class="search-header">
                     <div class="search position-relative">
                         <input type="text" placeholder="Tìm kiếm sản phẩm ...">
@@ -54,10 +85,13 @@
                     <p class="mt-1 ms-3"><b>Top tìm kiếm: </b>Giày thể thao, giày chạy bộ ...</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-8 col-xs-6 login-header d-flex align-items-center">
+            <div class="col-md-4 col-sm-8 login-header d-flex align-items-center">
                 <ul class="d-flex">
                     <li class="d-flex align-items-center px-2">
                         <i class='bx bx-heart'></i>
+                    </li>
+                    <li class="d-flex align-items-center px-2 tabler-s">
+                        <i class='bx bx-search-alt-2'></i>
                     </li>
                     <li class="d-flex align-items-center px-2">
                         <i class='bx bx-user'></i>
@@ -79,17 +113,26 @@
                             <div class="second-font">0 Sản phẩm</div>
                         </div>
                     </li>
+                    <li class="d-flex">
+                        <div class="m-0 menu-tablet">
+                            <i class='bx bx-menu'></i>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
+    <div class="position-relative input-tablet p-2">
+        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        <i class='bx bx-search'></i>
+    </div>
     <!-- end hotline -->
     <!-- navbar -->
-    <div class="container-fluid p-0">
-        <div class="navbar-header d-flex">
+    <div class="container-fluid p-0" id="navbar-on">
+        <div class="navbar-header">
             <ul class="d-flex m-auto">
                 <li class="male-navbar position-relative">
-                    <a href="#"> NAM <i class='bx bxs-chevron-down'></i>
+                    <a href="./html/NAM.html"> NAM <i class='bx bxs-chevron-down'></i>
                     </a>
                     <ul class="nam">
                         <li>
@@ -248,25 +291,25 @@
     <!-- collection -->
     <div class="container mt-3">
         <div class="row collection">
-            <div class="col-xs-6 col-sm-6 col-md-3 list-collection">
+            <div class="col-xl-3 col-sm-6 col-md-6 list-collection">
                 <a href="#">
                     <img src="./Images/collections1.png" alt="collections1">
                     <p>Giày Thể Thao</p>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 list-collection">
+            <div class="col-xl-3 col-sm-6 col-md-6 list-collection">
                 <a href="#">
                     <img src="./Images/collections2.png" alt="collections2">
                     <p>Áo Thể Thao</p>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 list-collection">
+            <div class="col-xl-3 col-sm-6 col-md-6 list-collection">
                 <a href="#">
                     <img src="./Images/collections3.png" alt="collections3">
                     <p>Quần Thể Thao</p>
                 </a>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 list-collection">
+            <div class="col-xl-3 col-sm-6 col-md-6 list-collection">
                 <a href="#">
                     <img src="./Images/collections4.png" alt="collections4">
                     <p>Phụ Kiện Khác</p>
@@ -280,7 +323,7 @@
             <div class="col-xl-12 col-sm-12 col-md-12 my-5">
                 <h2> <a href="#">Sản Phẩm Bán Chạy</a></h2>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 ">
+            <div class="col-xl-3 col-sm-6 col-md-6 ">
                 <div class="sanpham1">
                     <div class="bgr-img1">
                     </div>
@@ -308,7 +351,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3">
+            <div class="col-xl-3 col-sm-6 col-md-6">
                 <div class="sanpham2">
                     <div class="bgr-img2">
                     </div>
@@ -336,7 +379,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3">
+            <div class="col-xl-3 col-sm-6 col-md-6">
                 <div class="sanpham3">
                     <div class="bgr-img3">
                     </div>
@@ -364,7 +407,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3">
+            <div class="col-xl-3 col-sm-6 col-md-6">
                 <div class="sanpham4">
                     <div class="bgr-img4">
                     </div>
@@ -449,7 +492,7 @@
                 <div class="carousel-inner mb-5">
                     <div class="carousel-item active">
                         <div class="row sp">
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham4">
                                     <div class="bgr-img4">
                                     </div>
@@ -477,7 +520,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham121">
                                     <div class="bgr-img121">
                                     </div>
@@ -505,7 +548,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham131">
                                     <div class="bgr-img131">
                                     </div>
@@ -533,7 +576,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham141">
                                     <div class="bgr-img141">
                                     </div>
@@ -566,7 +609,7 @@
 
                     <div class="carousel-item">
                         <div class="row sp">
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham151">
                                     <div class="bgr-img151">
                                     </div>
@@ -594,7 +637,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham161">
                                     <div class="bgr-img161">
                                     </div>
@@ -622,7 +665,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham171">
                                     <div class="bgr-img171">
                                     </div>
@@ -650,7 +693,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham181">
                                     <div class="bgr-img181">
                                     </div>
@@ -682,7 +725,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row sp">
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham211">
                                     <div class="bgr-img211">
                                     </div>
@@ -710,7 +753,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham221">
                                     <div class="bgr-img221">
                                     </div>
@@ -738,7 +781,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham231">
                                     <div class="bgr-img231">
                                     </div>
@@ -766,7 +809,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-6 col-md-3 ">
+                            <div class="col-xl-3 col-sm-6 col-md-6 ">
                                 <div class="sanpham241">
                                     <div class="bgr-img241">
                                     </div>
@@ -831,24 +874,224 @@
             <div class="col-xl-2 col-md-3 col-sm-6">
                 <img src="./Images/thuonghieu4.webp" alt="thuonghieu4">
             </div>
-            <div class="col-xl-2 col-md-3 col-sm-6">
+            <div class="col-xl-2 col-md-3 col-sm-6 tablet-none">
                 <img src="./Images/thuonghieu5.webp" alt="thuonghieu5">
             </div>
-            <div class="col-xl-2 col-md-3 col-sm-6">
+            <div class="col-xl-2 col-md-3 col-sm-6 tablet-none">
                 <img src="./Images/thuonghieu6.webp" alt="thuonghieu6">
             </div>
         </div>
-        <div class="row sp my-5">
-            <div class="col-xl-6 col-sm-12 position-relative p-0">
-                <div class="bgr-th-1"></div>
-                <div class="btn position-absolute">NAM</div>
-            </div>
-            <div class="col-xl-6 col-sm-12 position-relative p-0">
-                <div class="bgr-th-2"></div>
-                <div class="btn">NU</div>
+    </div>
+    <div class="th">
+        <div class="container">
+            <div class="row sp my-5 pt-2">
+                <div class="col-xl-6 col-sm-6 position-relative p-0">
+                    <div class="bgr-th-1"></div>
+                    <div class="btn position-absolute btn-th">NAM</div>
+                </div>
+                <div class="col-xl-6 col-sm-6 position-relative p-0">
+                    <div class="bgr-th-2 "></div>
+                    <div class="btn  btn-th">NỮ</div>
+                </div>
             </div>
         </div>
     </div>
+    <!-- li do chon hodu -->
+    <div class="container">
+        <div class="row sp mb-4">
+            <div class="col-xl-12 col-sm-12 col-md-12 my-5">
+                <h2> <a href="#">Lý Do Chọn HODU Sport</a></h2>
+            </div>
+        </div>
+        <div class="row sp mb-4">
+            <div class="col-xl-4 col-md-6 col-sm-12 lido">
+                <div><img src="./Images/lido1.webp" alt="lido"></div>
+                <div>
+                    <h6>01. Chất Lượng Sản Phẩm</h6>
+                    <p>
+                        Chúng tôi đặt trải nghiệm về sản phẩm của bạn là tiêu chí số 1 để định hướng kinh doanh. Để bạn
+                        có thể yên tâm khi mua sắm và trong quá trình sử dụng sản phẩm.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12 lido">
+                <div><img src="./Images/lido2.webp" alt="lido"></div>
+                <div>
+                    <h6>02. Hơn 360.000 Khách Hàng</h6>
+                    <p>
+                        Tại HODU SPORT, chúng tôi phục vụ hơn 10.000 khách hàng mỗi tháng. Trân quý và yêu thương khách
+                        hàng là văn hóa cốt lõi mà Hodu Sport định hướng.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12 lido tablet-none">
+                <div><img src="./Images/lido3.webp" alt="lido"></div>
+                <div>
+                    <h6>03. Giao Hàng Toàn Quốc</h6>
+                    <p>
+                        HODU SPORT đang giao hàng trên phạm vi toàn quốc. Chúng tôi đang liên tục cải tiến quy trình
+                        giao vận để khách hàng có được trải nghiệm tốt nhất khi mua sắm Online.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tim kiem  nhieu -->
+    <div class="container">
+        <div class="row sp mb-5">
+            <div class="col-xl-12 col-sm-12 col-md-12 my-5">
+                <h2> <a href="#">Tìm Kiếm Nhiều</a></h2>
+            </div>
+        </div>
+        <ul class="sp  ul-tk mb-5">
+            <li><a href="#">giày thể thao cao cấp</a></li>
+            <li><a href="#">giày thể thao nữ</a></li>
+            <li><a href="#">giày thể thao </a></li>
+            <li><a href="#">giay chay bo</a></li>
+            <li><a href="#">giày thể thao chạy bộ nam</a></li>
+            <li><a href="#">giày bóng rổ</a></li>
+            <li><a href="#">mua giày chạy bộ</a></li>
+        </ul>
+    </div>
+    <!-- footer -->
+    <div class="th-footer">
+        <div class="container">
+            <div class="sp row py-4 ft1">
+                <div class="col-xs-12 col-sm-3 lh">
+                    <h4>GỌI MUA HÀNG ( 08:30-21:30 )</h4>
+                    <div class="icon-lh d-flex">
+                        <i class='bx bxs-phone'></i>
+                        <span class="ps-3"><a href="#">1900066827</a></span>
+                    </div>
+                    <p>Tất cả các ngày trong tuần</p>
+                </div>
+                <div class="col-xs-12 col-sm-3 lh">
+                    <h4>GÓP Ý, KHIẾU NẠI ( 08:30-20:30 )</h4>
+                    <div class="icon-lh d-flex">
+                        <i class='bx bxs-phone'></i>
+                        <span class="ps-3"><a href="#">1900066827</a></span>
+                    </div>
+                    <p>Các ngày trong tuần ( trừ ngày lễ )</p>
+                </div>
+                <div class="col-xs-12 col-sm-3 dk">
+                    <h4>ĐĂNG KÝ NHẬN THÔNG TIN MỚI TỪ HODU</h4>
+                    <div class="position-relative">
+                        <input type="email" placeholder="Nhập email của bạn ..." class="ip-up">
+                        <div class="btn position-absolute  btn-up">Đăng ký</div>
+                    </div>
+                    <div class="cb-up pt-2">
+                        <input type="checkbox">
+                        <span>Tôi đồng ý với các điều kiện & điều khoản.</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 hodu">
+                    <h4 class="mb-3">LIKE HODU TRÊN MẠNG XÃ HỘI</h4>
+                    <ul class="d-flex">
+                        <li><a href="#">
+                                <i class='bx bxl-facebook' style="    color: #3b5998;"></i></a>
+                        </li>
+                        <li><a href="#">
+                                <i class='bx bxl-instagram' style="    color: #7b472c;"></i></a>
+                        </li>
+                        <li><a href="#">
+                                <i class='bx bxl-youtube' style="color: #cc181e;"></i></a>
+                        </li>
+                        <li><a href="#">
+                                <i class='bx bxs-envelope' style="color: #1a73e8;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row sp py-4 footer-2">
+                <div class="col-xs-12 col-sm-3  ft2">
+                    <ul>
+                        <h4> Hỗ Trợ Khách Hàng</h4>
+                        <li><a href="#">Đặt hàng & Thanh toán</a></li>
+                        <li><a href="#">Giao hàng & Nhận hàng</a></li>
+                        <li> <a href="#">Đổi trả & Bảo hành</a></li>
+                        <li><a href="#">Khuyến Mại & Mã Giảm Giá</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li> <a href="#">Điều khoản dịch vụ</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3  ft2">
+                    <ul>
+                        <h4>VỀ CHÚNG TÔI</h4>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Theo dõi đơn hàng</a></li>
+                        <li> <a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Hướng dẫn chọn size</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li> <a href="#">Tìm kiếm</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3  ft2">
+                    <ul>
+                        <h4>THÔNG TIN LIÊN HỆ</h4>
+                        <li><a href="#">Cửa hàng thời trang thể thao HODU SPORT</a></li>
+                        <li><a href="#">Địa Chỉ: 49 Tố Hữu, Phường Hòa Cường Nam, Quận Hải Châu, TP. Đà Nẵng.</a></li>
+                        <li> <a href="#">Điện thoại: 1900 066 827</a></li>
+                        <li><a href="#">Email: hotro@hodusport.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3  ft2">
+                    <h4>FANPAGE CỦA CHÚNG TÔI</h4>
+                    <div class="d-flex lf-1">
+                        <img src="./Images/footer1.jpg" alt="footer1">
+                        <div class="ms-2">
+                            <a href="#">HODU Sport</a>
+                            <p>28 likes</p>
+                        </div>
+                    </div>
+                    <div class="btn lf-2">
+                        <i class='bx bxl-facebook-square'></i>
+                        Like Page
+                    </div>
+                </div>
+            </div>
+            <div class="row sp py-4">
+                <div class="col-xs-12 col-sm-7 ft-3">
+                    <p><b>
+                            HODU Sport là một sản phẩm của Công ty cổ phần TMDV SNV GROUP.</b></p>
+                    <span>MST: 0401976173 - Ngày cấp: 16/05/2019 - Nơi cấp: Sở KH & ĐT TP. Đà Nẵng.</span>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="d-flex ft-end">
+                        <img src="./Images/ft-3.webp" alt="footer-3">
+                        <span><i class='bx bx-check-shield'></i>100% sản phẩm chính hãng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zalo">
+        <img src="./Images/zalo.png" alt="zalo">
+    </div>
+    <div class="mess">
+        <img src="./Images/mess.png" alt="mess">
+    </div>
+    <div class="push-up" id="top">
+        <a href="#">
+            <i class='bx bxs-chevron-up-circle'></i>
+        </a>
+    </div>
 </body>
+<script>
+    window.onscroll = function () { navbar() }
+    function navbar() {
+        onnavbar = document.getElementById("navbar-on");
+        ontop = document.getElementById("top");
+        if (document.documentElement.scrollTop > 500) {
+            ontop.style.display = "block";
+            onnavbar.style.position = "fixed";
+            onnavbar.style.zIndex = "999999";
+            onnavbar.style.top = "0";
+        }
+        else {
+            ontop.style.display = "none";
+            onnavbar.style.position = "relative";
+        }
+    };
+</script>
 
 </html>

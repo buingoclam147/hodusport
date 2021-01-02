@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
+.second-font {
+    font-size: 12px;
+}
+
+.second-color {
+    color: #333;
+}
+
+.first-color {
+    color: #666;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* hotline */
+
+.hotline {
+    position: relative;
+}
+
+.hotline0::before {
+    position: absolute;
+    content: "";
+    background: linear-gradient(90deg, rgba(49, 85, 117, 1) 20%, rgba(29, 142, 211, 1) 50%, rgba(255, 207, 0, 1) 100%);
+    width: 100%;
+    height: 4px;
+}
+
+.hotline0::after {
+    position: absolute;
+    content: "";
+    background-color: #f2f2f2;
+    height: 1px;
+    width: 100%;
+}
+
+.huongdan {
+    text-align: right;
+}
+
+/* header */
+
+.logo-header a img {
+    max-width: 100%;
+    height: 70px;
+}
+
+.search-header {
+    margin-top: 8px !important;
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 0 60px 0 20px;
+    background: #ededed;
+    border-radius: 999px;
+    border: 1px solid #ededed;
+}
+
+.search i {
+    right: 2%;
+    font-size: 30px;
+    top: 15%;
+}
+
+.login-header i {
+    border: 2px solid #dddddd;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.login-header ul li {
+    flex-grow: 1;
+}
+
+/* navbar */
+
+.navbar-header {
+    background-color: black;
+    height: 35px;
+    font-size: 16px;
+    display: flex;
+}
+
+.navbar-header>ul>li>a {
+    color: white;
+    padding: 0 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.navbar-header>ul>li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.active-red {
+    color: #f00 !important;
+}
+
+.nam {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.nu {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.kid {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.thuonghieu {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.phukien {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+    top: 2.5rem;
+    width: 250px;
+    padding: 0;
+    display: none;
+    border-top: 2px solid #ff0000;
+}
+
+.nam li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.nu li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.kid li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.thuonghieu li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.phukien li {
+    color: black !important;
+    padding: 9px 18px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.male-navbar:hover ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.female-navbar:hover .nu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.kid-navbar:hover .kid {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.brad-navbar:hover .thuonghieu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.item-navbar:hover .phukien {
+    display: block;
+    position: absolute;
+    background-color: white;
+    color: black;
+    visibility: visible;
+}
+
+.ultraboost::before {
+    content: url(../Images/hot.png);
+    width: 10px;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+}
+/* tablets */
+.tabler-s{
+    display: none;
+}
+.menu-tablet{
+    display: none;
+}
+.brg-tablets{
+    position: fixed;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7777777;
+}
+.menu-tablets{
+    display: none;
+    width: 34.5rem;
+    overflow: hidden;
+    min-height: 100%;
+    padding: 60px 70px 250px;
+    z-index: 1000000000000;
+    background: #fff;
+    right: 0;
+}
+.menu-tablets>p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+.menu-tablets i{
+    margin-left: auto;
+    font-size: 25px;
+}
+.menu-tablets li a{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu-tablets>p>i{
+    font-size: 40px;
+}
+.input-tablet{
+    display: none;
+}
+.input-tablet input{
+    width: 100%;
+    height: 38px;
+    font-size: 12px;
+    background: #f5f5f5;
+    color: #333333;
+    font-weight: 500;
+    padding: 0 55px 0 20px;
+}
+.input-tablet i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    opacity: 0.7;
+}
