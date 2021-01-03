@@ -314,3 +314,54 @@ img {
     top: 20px;
     opacity: 0.7;
 }
+.select-dem select{
+    font-size: 14px;
+    width: 100%;
+    display: block;
+    height: 37px;
+    padding: 0 15px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    outline: 0;
+}
+/* bo loc */
+.filter-one i{
+    font-size: 20px;
+}
+.filter-one span{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.filter-one span::after{
+    content: "|";
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 20px;
+}
+.filter-two span{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 60px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+}
+.filter-two div{
+    margin: auto;
+}
+.so-trang {
+    margin: auto;
+    display: flex;
+    width: 12rem;
+    font-size: 15px;
+    font-weight: 600;
+}
+.so-trang i{
+    font-size: 25px;
+    margin-left: auto;
+}
+@media only screen and (max-width: 991px){
+    .filter-two span{
+        padding: 10px 15px;
+    }
+}
